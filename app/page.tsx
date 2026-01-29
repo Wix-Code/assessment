@@ -5,14 +5,14 @@ import EveryThingYouNeed from './components/EveryThingYouNeed'
 import PopularStores from './components/PopularStores'
 import HeroPage from './components/HeroPage'
 import BuildForYou from './components/BuildForYou'
-//import SimpleSteps from './components/SimpleSteps'
+import SimpleSteps from './components/SimpleSteps'
 
 const page = () => {
   return (
     <div className='bg-[#F7F7F7]'>
       <HeroPage />
       <PopularStores />
-      {/* <SimpleSteps /> */}
+      <SimpleSteps />
       <EveryThingYouNeed />
       <BuildForYou />
       <Faqs />
