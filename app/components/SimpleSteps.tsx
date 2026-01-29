@@ -22,7 +22,6 @@ const SimpleSteps = () => {
         </p>
       </div>
 
-      {/* First Two Steps */}
       <div className='flex flex-col md:flex-row relative px-5 w-full justify-between'>
         <div className='flex w-full md:w-[320px] flex-col gap-5 mb-8 md:mb-0'>
           <div className='flex flex-row items-center justify-between bg-white p-5 rounded-[30px]'>
@@ -55,7 +54,6 @@ const SimpleSteps = () => {
         <img src="/images/vec.png" alt="" />
       </div>
 
-      {/* Last Two Steps */}
       <div className='flex flex-col md:mt-0 mt-8 px-5 md:flex-row relative w-full justify-between'>
         <div className='flex w-full md:w-[320px] flex-col md:mt-[200px] gap-5 order-2 md:order-1 mb-8 md:mb-0'>
           <div className='flex flex-row items-center justify-between bg-white p-5 rounded-[30px]'>
