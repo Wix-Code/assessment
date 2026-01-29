@@ -86,11 +86,11 @@ const HeroPage = () => {
       </p>
 
       <div className="flex justify-center gap-3 flex-wrap">
-        <button className="py-3 sm:py-4 px-6 sm:px-8 rounded-full bg-[#003631] text-white text-sm sm:text-base font-medium hover:bg-[#004d45] transition">
+        <button className="py-3 sm:py-4 px-6 sm:px-8 cursor-pointer rounded-full bg-[#003631] text-white text-sm sm:text-base font-medium hover:bg-[#004d45] transition">
           Get Started
         </button>
 
-        <button className="border border-[#003631] text-[#003631] font-medium text-sm sm:text-base px-6 py-3 sm:py-4 rounded-full hover:bg-[#003631] hover:text-white transition">
+        <button className="border border-[#003631] text-[#003631] font-medium text-sm sm:text-base px-6 py-3 sm:py-4 rounded-full hover:bg-[#003631] cursor-pointer hover:text-white transition">
           How it Works
         </button>
       </div>
