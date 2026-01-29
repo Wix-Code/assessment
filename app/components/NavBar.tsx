@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from "react";
-
+import { Menu } from 'lucide-react';
 const NavBar = () => {
   const [open, setOpen] = useState(false);
 
@@ -29,7 +29,7 @@ const NavBar = () => {
           className="md:hidden text-[#181818]"
           onClick={() => setOpen(!open)}
         >
-          ☰
+          <Menu size="24" />
         </button>
       </div>
 
