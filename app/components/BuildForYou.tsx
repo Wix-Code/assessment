@@ -40,7 +40,6 @@ const BuildForYou = () => {
   return (
     <div className="max-w-[1200px] satoshi mx-auto px-4 sm:px-6 py-10 lg:py-14">
 
-      {/* Header */}
       <div className="flex flex-col gap-2 items-center text-center mb-12">
         <p className="text-[#003631] px-5 py-3 rounded-[30px] border border-[#47FFEE] bg-[#D1FFFB] text-sm">
           Built for you
@@ -56,7 +55,6 @@ const BuildForYou = () => {
         </p>
       </div>
 
-      {/* Top Cards */}
       <div className="flex flex-col sm:flex-row gap-6 lg:gap-8">
         {build.map((item, index) => {
           const isReversed = index % 2 !== 0
@@ -70,7 +68,7 @@ const BuildForYou = () => {
                 ${isReversed ? 'sm:mt-12 lg:mt-20' : ''}
               `}
             >
-              {/* Image */}
+              
               <img
                 src={item.image}
                 alt={item.title}
@@ -81,7 +79,6 @@ const BuildForYou = () => {
                 "
               />
 
-              {/* Text */}
               <div className="p-6 flex flex-col gap-3 text-center sm:text-left">
                 <p className="text-[#181818] font-bold text-xl sm:text-2xl">
                   {item.title}
@@ -95,7 +92,6 @@ const BuildForYou = () => {
         })}
       </div>
 
-      {/* Bottom Vector Grid */}
       <div className="
         grid mt-16 mb-10 gap-5
         grid-cols-1

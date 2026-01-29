@@ -7,9 +7,9 @@ const PopularStores = () => {
     "./images/ic1.png",
     "./images/ic2.png",
     "./images/ic3.png",
+    "./images/icc.png",
     "./images/ic4.png",
-    "./images/ic4.png",
-    "./images/ic4.png",
+    "./images/ic3.png",
     "./images/ic4.png",
   ]
   
