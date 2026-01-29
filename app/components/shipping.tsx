@@ -2,7 +2,7 @@ import React from 'react'
 
 const Shipping = () => {
   return (
-    <div className='w-full satoshi px-4 sm:px-6 lg:px-8 py-10 lg:py-14'>
+    <div className='w-full satoshi px-4 sm:px-6 py-10 lg:py-14'>
       <div className='max-w-[1200px] mx-auto'>
         <div className='flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-12'>
           {/* Text Content */}

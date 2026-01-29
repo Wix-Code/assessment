@@ -35,7 +35,7 @@ const EveryThingYouNeed = () => {
   ]
 
   return (
-    <div className='max-w-[1200px] satoshi mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12'>
+    <div className='max-w-[1200px] satoshi mx-auto px-4 sm:px-6 py-8 lg:py-12'>
       <div className='flex flex-col items-center justify-center'>
         <p className='text-[#003631] px-5 py-3 rounded-[30px] border-[1px] border-[#47FFEE] bg-[#D1FFFB] font-normal text-sm'>Platform Highlights</p>
         <p className='text-[#181818] font-medium text-3xl sm:text-4xl lg:text-[40px] mt-4'>Everything You Need, In One Place</p>
