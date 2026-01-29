@@ -21,19 +21,19 @@ const BuildForYou = () => {
       description: "Buy from US and other international stores."
     },
     {
-      image: "./images/search.png",
+      image: "./images/house.png",
       title: "Overseas Warehouse",
       description: "We receive and process your items securely."
     },
     {
-      image: "./images/global.png",
-      title: "Shop Globally",
-      description: "Buy from US and other international stores."
+      image: "./images/group.png",
+      title: "Delivered to Nigeria",
+      description: "Your package arrives at your chosen Nigerian address."
     },
     {
       image: "./images/search.png",
-      title: "Overseas Warehouse",
-      description: "We receive and process your items securely."
+      title: "Transparent & Secure",
+      description: "Clear costs, real tracking, safe payments."
     },
   ]
 
@@ -54,43 +54,44 @@ const BuildForYou = () => {
           <br className="hidden sm:block" /> delivery back home.
         </p>
       </div>
-
+      
       <div className="flex flex-col sm:flex-row gap-6 lg:gap-8">
-        {build.map((item, index) => {
-          const isReversed = index % 2 !== 0
+      {build.map((item, index) => {
+        const isFirst = index === 0
 
-          return (
-            <div
-              key={index}
-              className={`
-                flex flex-1 rounded-[20px] overflow-hidden bg-white border border-gray-200
-                flex-col
-                ${isReversed ? 'sm:mt-12 lg:mt-20' : ''}
-              `}
-            >
-              
-              <img
-                src={item.image}
-                alt={item.title}
-                className="
-                  w-full 
-                  h-[220px] sm:h-[300px] lg:h-[380px]
-                  object-cover
-                "
-              />
+        return (
+          <div
+            key={index}
+            className={`
+              flex w-full rounded-[24px] overflow-hidden
+              bg-white border border-gray-200 h-fit
+              flex-col
+              ${isFirst ? 'sm:flex-col-reverse' : 'md:mt-24'}
+            `}
+          >
+           
+            <img
+              src={item.image}
+              alt={item.title}
+              className="
+                w-full
+                h-[220px] sm:h-[300px] lg:h-[380px]
+                object-cover
+              "
+            />
 
-              <div className="p-6 flex flex-col gap-3 text-center sm:text-left">
-                <p className="text-[#181818] font-bold text-xl sm:text-2xl">
-                  {item.title}
-                </p>
-                <p className="text-[#717171] text-sm sm:text-base leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
+            <div className="p-6 flex flex-col gap-2 text-left">
+              <p className="text-[#181818] font-semibold text-lg sm:text-xl">
+                {item.title}
+              </p>
+              <p className="text-[#717171] text-sm sm:text-base">
+                {item.description}
+              </p>
             </div>
-          )
-        })}
-      </div>
+          </div>
+        )
+      })}
+    </div>
 
       <div className="
         grid mt-16 mb-10 gap-5
