@@ -50,14 +50,13 @@ const EveryThingYouNeed = () => {
         </p>
       </div>
 
-      {/* Features Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
         {features.map((feature, index) => (
           <div
             key={index}
             className="rounded-2xl border border-[#D7D7D7] bg-[#F9F9F9] overflow-hidden hover:shadow-md transition"
           >
-            {/* Image */}
+            
             <div className="w-full aspect-[4/3] bg-white">
               <img
                 src={feature.image}
@@ -67,7 +66,6 @@ const EveryThingYouNeed = () => {
               />
             </div>
 
-            {/* Content */}
             <div className="p-4 sm:p-5 bg-white">
               <h3 className="text-[#181818] mb-2 font-bold text-lg lg:text-xl">
                 {feature.title}

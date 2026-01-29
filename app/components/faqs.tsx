@@ -28,7 +28,6 @@ const Faqs = () => {
     <div className="w-full px-4 sm:px-6 lg:px-8 py-10 satoshi">
       <div className="max-w-[1100px] mx-auto flex flex-col items-center">
 
-        {/* Header */}
         <div className="flex flex-col gap-3 items-center text-center mb-10">
           <p className="text-[#003631] px-5 py-3 rounded-full border border-[#47FFEE] bg-[#D1FFFB] text-sm">
             Built for you
@@ -43,7 +42,6 @@ const Faqs = () => {
           </p>
         </div>
 
-        {/* FAQ List */}
         <div className="flex flex-col gap-4 w-full max-w-[798px]">
           {faqs.map((faq, index) => (
             <div
@@ -61,7 +59,6 @@ const Faqs = () => {
           ))}
         </div>
 
-        {/* Contact */}
         <div className="flex flex-col gap-3 items-center mt-10 text-center">
           <p className="text-[#181818] font-bold text-base">
             Still have a question?

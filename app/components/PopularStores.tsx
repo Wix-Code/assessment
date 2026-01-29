@@ -26,7 +26,6 @@ const PopularStores = () => {
           Shop from trusted international brands across fashion, electronics, home, and more. We <br className='hidden sm:block' />handle the delivery from abroad and bring your items safely to Nigeria.
         </p>
         
-        {/* Store Icons Grid */}
         <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6 w-full mt-8'>
           {
             icons.map((icon, index) => (

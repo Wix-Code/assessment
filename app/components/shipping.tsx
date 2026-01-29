@@ -6,7 +6,6 @@ const Shipping = () => {
       <div className="max-w-[1200px] mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-12">
 
-          {/* Text Content */}
           <div className="
             flex flex-col gap-5 
             w-full lg:w-[48%]
@@ -33,7 +32,6 @@ const Shipping = () => {
             </button>
           </div>
 
-          {/* Image Grid */}
           <div className="flex flex-col gap-4 w-full lg:w-[48%]">
             <img
               className="w-full h-auto object-cover rounded-lg"

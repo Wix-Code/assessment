@@ -13,7 +13,7 @@ const HeroPage = () => {
 
   return (
     <section className="max-w-[1200px] mx-auto px-4 sm:px-6 py-16 sm:py-20">
-      {/* Heading */}
+
       <div className="flex flex-col gap-3 items-center text-center mb-10 sm:mb-14">
         <p className="text-[#003631] px-5 py-3 rounded-full border border-[#47FFEE] bg-[#D1FFFB] text-sm">
           Global Shopping, Made Simple
@@ -26,7 +26,6 @@ const HeroPage = () => {
         </h1>
       </div>
 
-      {/* Mobile Images */}
       <div className="grid grid-cols-2 gap-4 mb-12 sm:hidden">
         {images.map((img, index) => (
           <div
@@ -42,7 +41,6 @@ const HeroPage = () => {
         ))}
       </div>
 
-      {/* Curved Image Stack (Tablet & Desktop) */}
       <div className="relative w-full max-w-[1000px] mx-auto h-[260px] sm:h-[300px] mb-12 hidden sm:block">
         {images.map((img, index) => {
           const middle = Math.floor(images.length / 2);
@@ -75,7 +73,6 @@ const HeroPage = () => {
         })}
       </div>
 
-      {/* Description */}
       <p className="text-[#717171] text-center max-w-[760px] mx-auto mb-10 text-sm sm:text-base leading-relaxed">
         We help{" "}
         <span className="text-[#181818] font-medium">
@@ -88,7 +85,6 @@ const HeroPage = () => {
         with clear pricing and full tracking.
       </p>
 
-      {/* Buttons */}
       <div className="flex justify-center gap-3 flex-wrap">
         <button className="py-3 sm:py-4 px-6 sm:px-8 rounded-full bg-[#003631] text-white text-sm sm:text-base font-medium hover:bg-[#004d45] transition">
           Get Started
