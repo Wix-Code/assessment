@@ -30,7 +30,7 @@ const Faqs = () => {
 
         {/* Header */}
         <div className="flex flex-col gap-3 items-center text-center mb-10">
-          <p className="text-[#003631] px-5 py-2 rounded-full border border-[#47FFEE] bg-[#D1FFFB] text-sm">
+          <p className="text-[#003631] px-5 py-3 rounded-full border border-[#47FFEE] bg-[#D1FFFB] text-sm">
             Built for you
           </p>
 
