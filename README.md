@@ -26,3 +26,6 @@ public/fonts
 
 public/images
 
+## Where is the project hosted?
+
+Vercel
