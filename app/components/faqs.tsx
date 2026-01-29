@@ -25,50 +25,57 @@ const Faqs = () => {
   ]
 
   return (
-    <div className='w-full px-4 satoshi sm:px-6 lg:px-8 py-10'>
-      <div className='max-w-[1100px] mx-auto flex flex-col items-center'>
-        {/* Header Section */}
-        <div className='flex flex-col gap-2 items-center text-center mb-8'>
-          <p className='text-[#003631] px-5 py-3 rounded-[30px] border-[1px] border-[#47FFEE] bg-[#D1FFFB] font-normal text-sm'>
+    <div className="w-full px-4 sm:px-6 lg:px-8 py-10 satoshi">
+      <div className="max-w-[1100px] mx-auto flex flex-col items-center">
+
+        {/* Header */}
+        <div className="flex flex-col gap-3 items-center text-center mb-10">
+          <p className="text-[#003631] px-5 py-2 rounded-full border border-[#47FFEE] bg-[#D1FFFB] text-sm">
             Built for you
           </p>
-          <p className='text-[#181818] font-medium text-3xl sm:text-4xl lg:text-[40px]'>
+
+          <h2 className="text-[#181818] font-medium text-3xl sm:text-4xl lg:text-[40px]">
             FAQs
-          </p>
-          <p className='text-[#717171] font-normal text-sm sm:text-base max-w-2xl'>
+          </h2>
+
+          <p className="text-[#717171] text-sm sm:text-base max-w-2xl">
             Focused on your needs, our team delivers solutions to ensure adequate and secure buy and ship to Nigeria.
           </p>
         </div>
 
-        {/* FAQ Items */}
-        <div className='flex flex-col gap-3 w-full max-w-[798px]'>
+        {/* FAQ List */}
+        <div className="flex flex-col gap-4 w-full max-w-[798px]">
           {faqs.map((faq, index) => (
-            <div 
+            <div
               key={index}
-              className='bg-[#EDEDED] w-full flex flex-row items-center gap-4 sm:gap-6 px-4 sm:px-5 py-5 sm:py-6 rounded-[32px]'
+              className="bg-[#EDEDED] rounded-[24px] px-5 py-6 flex flex-col gap-2 sm:flex-row sm:gap-6"
             >
-              <p className='text-[#181818] flex-1 font-bold text-sm sm:text-base'>
+              <p className="text-[#181818] font-bold text-sm sm:text-base sm:w-1/2">
                 {faq.question}
               </p>
-              <p className='text-[#717171] flex-1 font-normal text-sm sm:text-base'>
+
+              <p className="text-[#717171] text-sm sm:text-base sm:w-1/2">
                 {faq.answer}
               </p>
             </div>
           ))}
         </div>
 
-        {/* Contact Section */}
-        <div className='flex flex-col gap-3 items-center mt-8 text-center'>
-          <p className='text-[#181818] font-bold text-base'>
+        {/* Contact */}
+        <div className="flex flex-col gap-3 items-center mt-10 text-center">
+          <p className="text-[#181818] font-bold text-base">
             Still have a question?
           </p>
-          <p className='text-[#717171] font-normal text-sm sm:text-base'>
+
+          <p className="text-[#717171] text-sm sm:text-base">
             Reach out to our support team.
           </p>
-          <button className='text-[#003631] border-[1px] border-[#003631] font-bold text-sm sm:text-base px-6 py-3 sm:py-4 rounded-[30px] hover:bg-[#003631] hover:text-white transition-colors'>
+
+          <button className="border border-[#003631] text-[#003631] font-bold px-6 py-3 rounded-full hover:bg-[#003631] hover:text-white transition">
             Contact Us
           </button>
         </div>
+
       </div>
     </div>
   )

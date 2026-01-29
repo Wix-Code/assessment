@@ -36,69 +36,91 @@ const BuildForYou = () => {
       description: "We receive and process your items securely."
     },
   ]
-  
-  
+
   return (
-    <div className='max-w-[1200px] satoshi mx-auto px-4 sm:px-6 py-8 lg:py-12'>
-      <div className='flex flex-col gap-2 items-center text-center mb-12'>
-        <p className='text-[#003631] px-5 py-3 rounded-[30px] border-[1px] border-[#47FFEE] bg-[#D1FFFB] font-normal text-sm'>
+    <div className="max-w-[1200px] satoshi mx-auto px-4 sm:px-6 py-10 lg:py-14">
+
+      {/* Header */}
+      <div className="flex flex-col gap-2 items-center text-center mb-12">
+        <p className="text-[#003631] px-5 py-3 rounded-[30px] border border-[#47FFEE] bg-[#D1FFFB] text-sm">
           Built for you
         </p>
-        <p className='text-[#181818] font-medium text-3xl sm:text-4xl lg:text-[40px] mt-4'>
+
+        <h2 className="text-[#181818] font-medium text-3xl sm:text-4xl lg:text-[40px] mt-4">
           Who Is This For?
-        </p>
-        <p className='text-[#717171] font-normal text-sm sm:text-base max-w-2xl mt-2 px-4'>
-          Designed for Nigerians who shop internationally and want reliable <br className='hidden sm:block' /> delivery back home.
+        </h2>
+
+        <p className="text-[#717171] text-sm sm:text-base max-w-2xl mt-2 px-4">
+          Designed for Nigerians who shop internationally and want reliable
+          <br className="hidden sm:block" /> delivery back home.
         </p>
       </div>
 
-      <div className='flex flex-col sm:flex-row gap-6 lg:gap-8 items-start'>
-        {
-          build.map((item, index) => {
-            const isReversed = index % 2 !== 0;
-            
-            return (
-              <div 
-                key={index}
-                className={`flex flex-1 rounded-[20px] overflow-hidden border border-gray-200 bg-white ${isReversed ? 'flex-col-reverse sm:mt-16 lg:mt-20' : 'flex-col'}`}
-              >
-                
-                {/* Text Content */}
-                <div className='flex flex-col p-6 gap-3'>
-                  <p className='text-[#181818] font-bold text-xl sm:text-2xl'>
-                    {item.title}
-                  </p>
-                  <p className='text-[#717171] font-normal text-sm sm:text-base leading-relaxed'>
-                    {item.description}
-                  </p>
-                </div>
+      {/* Top Cards */}
+      <div className="flex flex-col sm:flex-row gap-6 lg:gap-8">
+        {build.map((item, index) => {
+          const isReversed = index % 2 !== 0
 
-                {/* Image */}
-                <div className='w-full'>
-                  <img 
-                    src={item.image} 
-                    alt={item.title}
-                    className='w-full h-[320px] sm:h-[380px] lg:h-[420px] object-cover'
-                  />
-                </div>
-
-              </div>
-            )
-          })
-        }
-      </div>
-
-      <div className='grid mt-20 mb-10 gap-5 grid-cols-4'>
-        {vectors.map((vec) => {
           return (
-            <div className='rounded-[32px] p-[24px] bg-[#EDEDED] flex flex-col justify-center items-center gap-2'>
-              <img src={vec.image} alt="" />
-              <p className='text-[#181818] font-bold text-[20px]'>{vec.title}</p>
-              <p className='text-[#717171] text-center font-normal text-[16px]'>{vec.description}</p>
+            <div
+              key={index}
+              className={`
+                flex flex-1 rounded-[20px] overflow-hidden bg-white border border-gray-200
+                flex-col
+                ${isReversed ? 'sm:mt-12 lg:mt-20' : ''}
+              `}
+            >
+              {/* Image */}
+              <img
+                src={item.image}
+                alt={item.title}
+                className="
+                  w-full 
+                  h-[220px] sm:h-[300px] lg:h-[380px]
+                  object-cover
+                "
+              />
+
+              {/* Text */}
+              <div className="p-6 flex flex-col gap-3 text-center sm:text-left">
+                <p className="text-[#181818] font-bold text-xl sm:text-2xl">
+                  {item.title}
+                </p>
+                <p className="text-[#717171] text-sm sm:text-base leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
             </div>
           )
         })}
       </div>
+
+      {/* Bottom Vector Grid */}
+      <div className="
+        grid mt-16 mb-10 gap-5
+        grid-cols-1
+        sm:grid-cols-2
+        lg:grid-cols-4
+      ">
+        {vectors.map((vec, index) => (
+          <div
+            key={index}
+            className="
+              rounded-[32px] p-6 bg-[#EDEDED]
+              flex flex-col items-center text-center gap-3
+            "
+          >
+            <img src={vec.image} alt={vec.title} className="w-10 h-10" />
+            <p className="text-[#181818] font-bold text-lg">
+              {vec.title}
+            </p>
+            <p className="text-[#717171] text-sm leading-relaxed">
+              {vec.description}
+            </p>
+          </div>
+        ))}
+      </div>
+
     </div>
   )
 }
