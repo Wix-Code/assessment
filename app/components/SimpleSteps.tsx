@@ -51,44 +51,38 @@ const SimpleSteps = () => {
         </div>
       </div>
 
-      <div className=" flex w-full md:flex hidden pr-36 justify-end items-end ">
+      <div className=" flex w-full md:flex hidden pr-42 justify-end items-end ">
         <img src="/images/vec.png" alt="" />
       </div>
 
       {/* Last Two Steps */}
       <div className='flex flex-col md:mt-0 mt-8 px-5 md:flex-row relative w-full justify-between'>
-
-        {/* Step four (desktop) → move to last on small screens */}
-        <div className='flex w-full md:w-[320px] flex-col md:mt-[200px] gap-5 mb-8 md:mb-0 order-2 md:order-1'>
+        <div className='flex w-full md:w-[320px] flex-col md:mt-[200px] gap-5 order-2 md:order-1 mb-8 md:mb-0'>
           <div className='flex flex-row items-center justify-between bg-white p-5 rounded-[30px]'>
-            <p className='text-[#181818] text-[24px] font-normal uppercase'>Step four</p>
+            <p className='text-[#181818] text-[24] font-normal uppercase'>Step four</p>
             <button className='w-[45px] text-[18px] font-normal  h-[45px] rounded-full border-dashed border-[1px] border-[#003631]'>04</button>
           </div>
           <div className='p-[20px] bg-white rounded-[30px]'>
-            <p className='text-[#181818] mb-4 text-[24px] mt-20 font-bold'>Delivered to Nigeria</p>
+            <p className='text-[#181818] mb-4 text-[24] mt-20 font-bold'>Delivered to Nigeria</p>
             <p className='text-[#717171] text-[16px] font-normal'>Your package is shipped to Nigeria and<br /> delivered to your address, with tracking<br /> updates along the way.</p>
           </div>
         </div>
-
         <img
           src="./images/ve.png"
           alt=""
           className="hidden md:block absolute top-54 left-1/2 -translate-x-1/2"
         />
-
-        {/* Step three → move first on small screens */}
-        <div className='flex w-full md:w-[320px] md:mb-0 mb-8 flex-col gap-5 order-1 md:order-2'>
+        <div className='flex w-full md:w-[320px] flex-col order-1 mdd:mb-0 mb-8 md:order-2 gap-5'>
           <div className='flex flex-row items-center justify-between bg-white p-5 rounded-[30px]'>
-            <p className='text-[#181818] text-[24px] font-normal uppercase'>Step three</p>
+            <p className='text-[#181818] text-[24] font-normal uppercase'>Step three</p>
             <button className='w-[45px] text-[18px] font-normal  h-[45px] rounded-full border-dashed border-[1px] border-[#003631]'>03</button>
           </div>
           <div className='p-[20px] bg-white rounded-[30px]'>
-            <p className='text-[#181818] mb-4 text-[24px] mt-20 font-bold'>Choose Shipping & Pay</p>
+            <p className='text-[#181818] mb-4 text-[24] mt-20 font-bold'>Choose Shipping & Pay</p>
             <p className='text-[#717171] text-[16px] font-normal'>Select your shipping option, view the cost, and complete payment.</p>
           </div>
         </div>
-      </div>
-
+      </div> 
     </div>
   )
 }
